@@ -12,6 +12,8 @@ staticvalues:
     value: elevator	
   - name: category
     value: Elevator/Escalator
+  - name: campuspulse_id
+    value: manual
 
 destination:
   method: submit
@@ -102,6 +104,11 @@ destination:
 					document.getElementById("room").value = room;
 				}
 
+				const campuspulseId = urlParams.get("campuspulse_id");
+				if (campuspulseId) {
+					document.querySelector('[name="campuspulse_id"]').value = campuspulseId;
+				}
+
 				const building = urlParams.get("building");
 
 				if (building) {
@@ -109,6 +116,7 @@ destination:
 					const bldgElem = document.getElementById("building")
 					$('#building').val(building).trigger("change");
 				}
+				
 
 			})
 
