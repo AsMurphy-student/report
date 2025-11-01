@@ -4,6 +4,6 @@ description: Report things to ServiceNow.
 servicenow_domain: "help.rit.edu"
 repository_url: "https://github.com/CampusPulse/report"
 
-baseurl: ""
+baseurl: "iss12"
 
 exclude: ["Gemfile", "Gemfile.lock"]
