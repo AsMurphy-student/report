@@ -14,8 +14,6 @@ staticvalues:
     value: Structural Building Maintenance
   - name: subcategory
     value: Automated Accessible Door Operator
-  - name: room
-    value: Not provided
 
 destination:
   method: submit
@@ -36,6 +34,9 @@ destination:
 	
 	<label for="floor">Floor</label>
 	<input type="text" id="floor" name="floor" required placeholder="Enter the floor (e.g., A for Basement, 1, 2, etc.)" pattern="A|B|[0-9]" title="Enter floor number as either 'A', 'B', or a single numeric value">
+
+	<label for="room">Room</label>
+	<input type="text" id="room" name="room" placeholder="Enter the room number (if applicable)" title="Enter the room number (if applicable)">
 	
 	<label for="description">Description of the Problem</label>
 	<div class="sidebyside" style="flex-wrap: wrap;">
